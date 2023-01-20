@@ -43,6 +43,25 @@ nav li {
   font-weight: 800;
 }
 
+@media only screen and (max-width: 992px) {
+  .btn-outlined{
+    width: 100px;    
+  }
+  .logo img{
+    width: 100px;
+  }
+  nav ul a{
+    font-size:12px
+  }
+
+}
+@media only screen and (max-width: 576px) {
+  nav ul{
+    display: none;
+  }
+}
+
+
 .banner {
   background-color: #C6F3CA;
   height: 400px;
@@ -87,6 +106,31 @@ nav li {
   margin-left: 20px;
 }
 
+@media only screen and (max-width: 992px) {
+  .banner{
+    height: auto;
+  }
+  .row{
+    justify-content: center;
+  }
+  .col img{
+    width: 300px;
+  }
+  .h1{
+    font-size: 28px;
+    width: 80%;
+  }
+  .filled-btn{
+    margin-bottom: 20px;
+  }
+  
+}
+@media only screen and (max-width: 576px) {
+  .row{
+    flex-direction: column-reverse;
+  }
+}
+
 .content-one {
   background-color: rgba(198, 243, 202, 0.4);
   height: 300px;
@@ -120,6 +164,29 @@ nav li {
 .col-3{
   width: 33%;
 }
+@media only screen and (max-width: 992px) {
+  .content-one{
+    height: auto;
+  }  
+}
+@media only screen and (max-width: 576px) {
+  .content-one-row{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+  } 
+  .content-one-row img{
+    width: 400px;
+    margin: 0;
+  }
+  .content-one-row p{
+    width: 100%;
+  }
+  .col-3{
+    width: 100%;
+  }
+}
 .content-three{
   background-color: rgba(198, 243, 202, 0.2);
 
@@ -138,6 +205,26 @@ nav li {
 }
 .col-2{
   width: 40%;
+}
+@media only screen and (max-width: 992px) {
+  .content-three img{
+    width: 300px;
+  }  
+}
+@media only screen and (max-width: 576px) {
+  .content-three img{
+    width: 300px;
+  }
+  .content-three-row{
+    flex-direction: column;
+  }
+  .content-three-row p{
+    width: 100%;
+    text-align: center;
+  }
+  .col-2{
+    width: 100%;
+  }
 }
 .content-four-row{
   display: flex;
@@ -159,4 +246,19 @@ nav li {
 .footer p{
   text-align: center;
   font-weight: 800;
+}
+@media only screen and (max-width: 992px) {
+  .content-four-row img{
+    width: 400px;
+  }  
+}
+@media only screen and (max-width: 576px) {
+  .content-four-row{
+    flex-direction: column;
+  }
+  .content-four-row p{
+    width: 100%;
+    text-align: center;
+    margin:0
+  }
 }

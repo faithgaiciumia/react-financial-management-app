@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 5px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul a {
+  font-family: Poppins;
+  font-size: 14px;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 15px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.btn-outlined {
+  padding: 10px;
+  width: 170px;
+  background-color: #fff;
+  outline-color: #12B886;
+  border-color: #12B886;
+  border-width: 0.8px;
+  border-radius: 8px;
+  color: #12B886;
+  font-family: Poppins;
+  font-weight: 800;
+}
+
+.banner {
+  background-color: #C6F3CA;
+  height: 400px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.col img {
+  width: 500px;
+}
+
+.h1 {
+  font-family: "Poppins";
+  font-weight: 800;
+  width: 60%;
+  font-size: 35px;
+}
+
+.lead {
+  font-family: "Poppins";
+  margin-top: 20px;
+}
+
+.filled-btn {
+  background-color: #12B886;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.col {
+  margin-left: 20px;
+}
+
+.content-one {
+  background-color: rgba(198, 243, 202, 0.4);
+  height: 300px;
+  margin: 0;
+
+}
+
+.content-one-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.content-one-row img {
+  width: 200px;
+  height: 200px;
+  margin-left: 40px;
+}
+.content-one-row p{
+  width: 80%;
+  text-align: center;
+}
+.h2 {
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 10px;
+}
+.col-3{
+  width: 33%;
+}
+.content-three{
+  background-color: rgba(198, 243, 202, 0.2);
+
+}
+.content-three img{
+  width: 500px;
+}
+.content-three-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.content-three-row p{
+  width: 80%;
+}
+.col-2{
+  width: 40%;
+}
+.content-four-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;  
+}
+.content-four-row img{
+  width: 600px;
+}
+.content-four-row p{
+  width: 80%;
+  margin-left: 20px;
+}
+.footer{
+  background-color: #C6F3CA;
+  padding: 10px;
+}
+.footer p{
+  text-align: center;
+  font-weight: 800;
+}

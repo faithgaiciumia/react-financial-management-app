@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Intro from "./pages/Onboarding/Intro";
+import Login from "./pages/SignUp/Login";
+import SignUp from "./pages/SignUp/SignUp";
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<Intro />} />
+          <Route exact path="login" element={<Login />} />
+          <Route exact path="signup" element={<SignUp />} />
         </Routes>
       </Router>
     </div>

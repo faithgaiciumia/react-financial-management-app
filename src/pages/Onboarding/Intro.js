@@ -5,6 +5,7 @@ import illustrationTwo from "../../img/ilTwo.png";
 import illustrationThree from "../../img/ilThree.png";
 import illustrationFour from "../../img/ilFour.png";
 import illustrationFive from "../../img/ilFive.png";
+import { Link } from "react-router-dom";
 export default function Intro() {
   return (
     <>
@@ -27,9 +28,11 @@ export default function Intro() {
               <a>Support</a>
             </li>
           </ul>
-          <button type="button" className="btn-outlined">
-            Get Started
-          </button>
+          <Link to="/signup">
+            <button type="button" className="btn-outlined">
+              Get Started
+            </button>
+          </Link>
         </nav>
       </header>
       <main>
@@ -41,9 +44,11 @@ export default function Intro() {
             <p className="lead">
               The #1 Financial Management Software for Personal Use
             </p>
-            <button type="button" className="filled-btn">
-              Sign up for free
-            </button>
+            <Link to="/signup">
+              <button type="button" className="filled-btn">
+                Sign up for free
+              </button>
+            </Link>
           </div>
           <div className="col">
             <img src={illustrationOne} alt="illustration-one" />
@@ -93,14 +98,14 @@ export default function Intro() {
               </p>
             </div>
             <div>
-                <img src={illustrationFive} alt="illustration-five"/>
+              <img src={illustrationFive} alt="illustration-five" />
             </div>
           </div>
         </div>
       </main>
       <footer>
         <div className="footer">
-            <p className="lead">Copyright © 2023 FinMan</p>
+          <p className="lead">Copyright © 2023 FinMan</p>
         </div>
       </footer>
     </>

@@ -330,22 +330,39 @@ nav li {
 }
 .signup-heading p{
   font-family: "Poppins";
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 800;
 }
 .signup-row{
   display: flex;
   margin:20px;
-  justify-content: space-between;
-}
-.signup-row img{
-  width: 400px;
-  align-self: flex-end;
-}
-.signup-row p{
-  font-size: 32px;
-  font-weight: 800;
-  font-family: "Poppins";
-  width: 65%;
   
 }
+.bg-img{  
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.signup-row p{
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Poppins";
+  width: 50%;  
+}
+.input{
+  margin: 10px!important;  
+  margin-bottom: 20px!important;
+}
+.full-length{
+  width: 95%;
+}
+.signin-link{
+  color: #12B886;
+  font-weight: 800;
+  font-family: "Poppins";
+  font-size: 12px;
+  margin-top: 10px;
+  cursor:"pointer"
+}
+
+

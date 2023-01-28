@@ -9,8 +9,20 @@ export default function Home() {
       <NavBar />
       <div className={styles.row}>
         <SideBar />
-        <div className={styles.col}>
-          <h1>main</h1>
+        <div className={styles.main}>
+          <div>
+            <p>Kes 2000</p>
+            <p>This Week's Spending</p>
+          </div>
+          <div>
+            <p>chart</p>
+          </div>
+          <div>
+            <p>Recent Spendings</p>
+          </div>
+          <div>
+            <p>Recent Earnings</p>
+          </div>
         </div>
       </div>
     </>
@@ -20,10 +32,9 @@ export default function Home() {
 const useStyles = createUseStyles({
   row: {
     display: "flex",
-    alignContent: "center",
-    alignItems: "center",
   },
-  col: {
-    width: "70%",
+  main: {
+    backgroundColor: "rgba(198, 243, 202, 0.2)",
+    width: "100%",
   },
 });

@@ -1,27 +1,54 @@
 import SideBar from "../../components/SideBar";
 import NavBar from "../../components/NavBar";
 import { createUseStyles } from "react-jss";
+import RecentTable from "../../components/RecentTable";
+import HomeAnalytics from "../../components/HomeAnalytics";
+import BarChart from "../../components/BarChart";
 
 export default function Home() {
   const styles = useStyles();
+  const spendings = [
+    {
+      id:0,
+      sName: "Rent",
+      sAmount: 10000,
+      sDay: "Yesterday",
+      sImage: "https://img.icons8.com/emoji/512/house-emoji.png",
+    },
+  ];
+  const earnings = [
+    {
+      id:0,
+      sName: "Shumia Enterprises",
+      sAmount: 100000,
+      sDay: "Yesterday",
+      sImage: "https://img.icons8.com/emoji/512/money-bag-emoji.png",
+    },
+    {
+      id:1,
+      sName: "Shumia Enterprises",
+      sAmount: 100000,
+      sDay: "Yesterday",
+      sImage: "https://img.icons8.com/emoji/512/money-bag-emoji.png",
+    },
+  ];
+
   return (
     <>
-      <NavBar />
       <div className={styles.row}>
         <SideBar />
         <div className={styles.main}>
-          <div>
-            <p>Kes 2000</p>
-            <p>This Week's Spending</p>
+          <div className={styles.mainRow}>
+            <HomeAnalytics amount="2,000" text="Spending" />
+            <HomeAnalytics amount="10,000" text="Earning" />
           </div>
-          <div>
-            <p>chart</p>
+          <div className={styles.mainRow}>
+            <BarChart bgColor="#d9534f" />
+            <BarChart bgColor="#5cb85c" />
           </div>
-          <div>
-            <p>Recent Spendings</p>
-          </div>
-          <div>
-            <p>Recent Earnings</p>
+          <div className={styles.mainRow}>
+            <RecentTable text="Spendings" array={spendings} />
+            <RecentTable text="Earnings" array={earnings} />
           </div>
         </div>
       </div>
@@ -34,7 +61,9 @@ const useStyles = createUseStyles({
     display: "flex",
   },
   main: {
-    backgroundColor: "rgba(198, 243, 202, 0.2)",
     width: "100%",
+  },
+  mainRow: {
+    display: "flex",
   },
 });

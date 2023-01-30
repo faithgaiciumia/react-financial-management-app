@@ -1,7 +1,7 @@
 import { createUseStyles } from "react-jss";
 import { Link } from "react-router-dom";
 import RecentRow from "./RecentRow";
-export default function RecentTable({ text, array }) {
+export default function RecentTable({ text, array, borderColor}) {
   const styles = useStyles();
   const spendingsList = array.map((spending) => (
     <RecentRow
@@ -9,10 +9,11 @@ export default function RecentTable({ text, array }) {
       sName={spending.sName}
       sAmount={spending.sAmount}
       sImage={spending.sImage}
+      sSign={spending.sSign}
     />
   ));
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{borderColor:borderColor}} >
       <div className={styles.headerRow}>
         <p className={styles.heading}>Recent {text}</p>
         <Link className={styles.link}>
@@ -27,10 +28,13 @@ const useStyles = createUseStyles({
   container: {
     margin: "10px",
     width: "48%",
+    border:"0.5px solid",    
+    borderRadius:"8px"
   },
   headerRow: {
     display: "flex",
     justifyContent: "space-between",
+    padding:"10px"
   },
   heading: {
     fontWeight: "800",
@@ -50,9 +54,9 @@ const useStyles = createUseStyles({
     marginTop: "20px",
   },
   tableIcon: {
-    marginRight: "40px",
-    width: "50px",
-    height: "50px",
+    marginRight: "20px",
+    width: "40px",
+    height: "40px",
   },
   tableHeading: {
     fontWeight: "800",

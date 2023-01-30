@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-export default function RecentRow({sName, sAmount, sImage}) {
+export default function RecentRow({sName, sAmount, sImage, sSign}) {
   const styles = useStyles();
   return (
     <div className={styles.tableRow}>
@@ -9,7 +9,7 @@ export default function RecentRow({sName, sAmount, sImage}) {
         className={styles.tableIcon}
       />
       <p className={styles.tableHeading}>{sName}</p>
-      <p className={styles.tableAmount}>-KES {sAmount}</p>
+      <p className={styles.tableAmount}> {sSign} KES {sAmount}</p>
       <p className={styles.tableDay}>Yesterday</p>
     </div>
   );
@@ -41,9 +41,9 @@ const useStyles = createUseStyles({
     marginTop: "20px",
   },
   tableIcon: {
-    marginRight: "40px",
-    width: "50px",
-    height: "50px",
+    marginRight: "20px",
+    width: "40px",
+    height: "40px",
   },
   tableHeading: {
     fontWeight: "800",

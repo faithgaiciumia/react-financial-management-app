@@ -13,7 +13,7 @@ export default function RecentTable({ text, array, borderColor}) {
     />
   ));
   return (
-    <div className={styles.container} style={{borderColor:borderColor}} >
+    <div className={styles.container} style={{borderColor:"#fff"}} >
       <div className={styles.headerRow}>
         <p className={styles.heading}>Recent {text}</p>
         <Link className={styles.link}>
@@ -28,8 +28,9 @@ const useStyles = createUseStyles({
   container: {
     margin: "10px",
     width: "48%",
-    border:"0.5px solid",    
-    borderRadius:"8px"
+    border:"1px solid",    
+    borderRadius:"8px",
+    boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px"
   },
   headerRow: {
     display: "flex",

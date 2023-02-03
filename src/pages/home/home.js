@@ -71,7 +71,7 @@ export default function Home() {
   return (
     <>
       <div className={styles.row}>
-        <SideBar />
+        <SideBar homeActive={true} />
         <div className={styles.main}>
           <div className={styles.mainRow}>
             <div className={styles.card} style={{background:"rgba(217, 83, 79, 0.4)"}}>
@@ -107,7 +107,7 @@ const useStyles = createUseStyles({
   },
   card: {
     borderRadius: "8px",    
-    boxShadow: "20px 20px 60px #bebebe,-20px -20px 60px #ffffff",
+    boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
     width: "48%",
     margin: "10px",
   },

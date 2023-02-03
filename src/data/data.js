@@ -1,7 +1,7 @@
 export const Data = [
   {
     id: 1,
-    day: "Mon",
+    day: "Mon", 
     userGain: 800,
     userLost: 823,
   },

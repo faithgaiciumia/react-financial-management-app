@@ -1,13 +1,29 @@
 import { createUseStyles } from "react-jss";
+import RecentRow from "../../components/RecentRow";
 import SideBar from "../../components/SideBar";
+import { earnings } from "../../data/EarningData";
 
 export default function Earnings() {
   const styles = useStyles();
+  const earningsList = earnings.map((earning) => (
+    <RecentRow
+      key={earning.id}
+      sName={earning.sName}
+      sAmount={earning.sAmount}
+      sImage={earning.sImage}
+      sSign={earning.sSign}
+    />
+  ));
   return (
     <>
       <div className={styles.row}>
         <SideBar earningsActive={true} />
-        <div className={styles.main}>Hi am earnings page</div>
+        <div className={styles.main}>
+          <div>
+            <h2>Earnings</h2>
+          </div>               
+          <div>{earningsList}</div>
+        </div>
       </div>
     </>
   );

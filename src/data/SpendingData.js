@@ -1,0 +1,42 @@
+export const spendings = [
+  {
+    id: 0,
+    sName: "Rent",
+    sAmount: 10000,
+    sDay: "Yesterday",
+    sImage: "https://img.icons8.com/emoji/512/house-emoji.png",
+    sSign: "-",
+  },
+  {
+    id: 1,
+    sName: "Grocery",
+    sAmount: 2500,
+    sDay: "Yesterday",
+    sImage: "https://img.icons8.com/color/512/ingredients.png",
+    sSign: "-",
+  },
+  {
+    id: 2,
+    sName: "Clothes",
+    sAmount: 5000,
+    sDay: "Yesterday",
+    sImage: "https://img.icons8.com/color/512/clothes.png",
+    sSign: "-",
+  },
+  {
+    id: 3,
+    sName: "Enjoyment",
+    sAmount: 2000,
+    sDay: "Yesterday",
+    sImage: "https://img.icons8.com/color/512/festival.png",
+    sSign: "-",
+  },
+  {
+    id: 4,
+    sName: "Church",
+    sAmount: 10000,
+    sDay: "Yesterday",
+    sImage: "https://img.icons8.com/color/512/city-church.png",
+    sSign: "-",
+  },
+];

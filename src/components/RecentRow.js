@@ -1,15 +1,16 @@
 import { createUseStyles } from "react-jss";
-export default function RecentRow({sName, sAmount, sImage, sSign}) {
+export default function RecentRow({ sName, sAmount, sImage, sSign }) {
   const styles = useStyles();
   return (
     <div className={styles.tableRow}>
-      <img
-        src={sImage}
-        alt="icon"
-        className={styles.tableIcon}
-      />
-      <p className={styles.tableHeading}>{sName}</p>
-      <p className={styles.tableAmount}> {sSign} KES {sAmount}</p>
+      <div className={styles.tableRow}>
+        <img src={sImage} alt="icon" className={styles.tableIcon} />
+        <p className={styles.tableHeading}>{sName}</p>
+      </div>
+      <p className={styles.tableAmount}>
+        {" "}
+        {sSign} KES {sAmount}
+      </p>
       <p className={styles.tableDay}>Yesterday</p>
     </div>
   );

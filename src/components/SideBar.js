@@ -27,27 +27,30 @@ export default function SideBar({
       <div className={styles.list}>
         <div className={homeActive ? styles.listRowActive : styles.listRow}>
           <HomeIcon />
-          <Link to="/home" className={homeActive ? styles.listTxtActive : styles.listTxt}>
+          <Link
+            to="/home"
+            className={homeActive ? styles.listTxtActive : styles.listTxt}
+          >
             <p>Home</p>
-          </Link>
-        </div>
-        <div className={profileActive ? styles.listRowActive : styles.listRow}>
-          <PersonIcon />
-          <Link to="/profile" className={profileActive ? styles.listTxtActive : styles.listTxt}>
-            <p>Profile</p>
           </Link>
         </div>
         <div
           className={spendingsActive ? styles.listRowActive : styles.listRow}
         >
           <ShoppingBagIcon />
-          <Link to="/spendings" className={spendingsActive ? styles.listTxtActive : styles.listTxt}>
+          <Link
+            to="/spendings"
+            className={spendingsActive ? styles.listTxtActive : styles.listTxt}
+          >
             <p>Spendings</p>
           </Link>
         </div>
         <div className={earningsActive ? styles.listRowActive : styles.listRow}>
           <PaidIcon />
-          <Link to="/earnings" className={earningsActive ? styles.listTxtActive : styles.listTxt}>
+          <Link
+            to="/earnings"
+            className={earningsActive ? styles.listTxtActive : styles.listTxt}
+          >
             <p>Earnings</p>
           </Link>
         </div>
@@ -55,13 +58,30 @@ export default function SideBar({
           className={predictionsActive ? styles.listRowActive : styles.listRow}
         >
           <QueryStatsIcon />
-          <Link to="/predictions" className={predictionsActive ? styles.listTxtActive : styles.listTxt}>
+          <Link
+            to="/predictions"
+            className={
+              predictionsActive ? styles.listTxtActive : styles.listTxt
+            }
+          >
             <p>Predictions</p>
+          </Link>
+        </div>
+        <div className={profileActive ? styles.listRowActive : styles.listRow}>
+          <PersonIcon />
+          <Link
+            to="/profile"
+            className={profileActive ? styles.listTxtActive : styles.listTxt}
+          >
+            <p>Profile</p>
           </Link>
         </div>
         <div className={settingsActive ? styles.listRowActive : styles.listRow}>
           <SettingsIcon />
-          <Link to="/settings" className={settingsActive ? styles.listTxtActive : styles.listTxt}>
+          <Link
+            to="/settings"
+            className={settingsActive ? styles.listTxtActive : styles.listTxt}
+          >
             <p>Account & Settings</p>
           </Link>
         </div>
@@ -134,11 +154,11 @@ const useStyles = createUseStyles({
     color: "#000",
     textDecoration: "none",
   },
-  listTxtActive:{
+  listTxtActive: {
     fontFamily: "Poppins",
     fontSize: "12px",
     marginLeft: "10px",
     color: "#fff",
     textDecoration: "none",
-  }
+  },
 });

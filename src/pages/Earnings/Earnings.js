@@ -1,4 +1,5 @@
 import { createUseStyles } from "react-jss";
+import HeaderBar from "../../components/HeaderBar";
 import RecentRow from "../../components/RecentRow";
 import SideBar from "../../components/SideBar";
 import { earnings } from "../../data/EarningData";
@@ -20,8 +21,8 @@ export default function Earnings() {
         <SideBar earningsActive={true} />
         <div className={styles.main}>
           <div>
-            <h2>Earnings</h2>
-          </div>               
+            <HeaderBar title="Earnings" />
+          </div>
           <div>{earningsList}</div>
         </div>
       </div>
@@ -35,6 +36,7 @@ const useStyles = createUseStyles({
   },
   main: {
     width: "100%",
+    margin: "20px",
   },
   mainRow: {
     display: "flex",

@@ -1,8 +1,10 @@
 import { createUseStyles } from "react-jss";
+import FilterList from "../../components/FilterList";
 import HeaderBar from "../../components/HeaderBar";
 import RecentRow from "../../components/RecentRow";
 import SideBar from "../../components/SideBar";
 import { earnings } from "../../data/EarningData";
+import { EarningCategories } from "../../data/EarningCategories";
 
 export default function Earnings() {
   const styles = useStyles();
@@ -22,6 +24,9 @@ export default function Earnings() {
         <div className={styles.main}>
           <div>
             <HeaderBar title="Earnings" />
+          </div>
+          <div>
+            <FilterList array={EarningCategories}/>
           </div>
           <div>{earningsList}</div>
         </div>

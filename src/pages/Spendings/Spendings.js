@@ -1,10 +1,12 @@
 import { createUseStyles } from "react-jss";
+import FilterList from "../../components/FilterList";
 import HeaderBar from "../../components/HeaderBar";
 import RecentRow from "../../components/RecentRow";
 import RecentTable from "../../components/RecentTable";
 import ReportCard from "../../components/ReportCard";
 import SideBar from "../../components/SideBar";
 import { spendings } from "../../data/SpendingData";
+import { SpendingCategories } from "../../data/SpendingCategories";
 
 export default function Spendings() {
   const styles = useStyles();
@@ -26,8 +28,10 @@ export default function Spendings() {
             <HeaderBar title="Spendings" />
           </div>
           <div>
-            {spendingsList}
+            <FilterList array={SpendingCategories} />
           </div>
+
+          <div>{spendingsList}</div>
         </div>
       </div>
     </>
@@ -40,7 +44,7 @@ const useStyles = createUseStyles({
   },
   main: {
     width: "100%",
-    margin:"20px"
+    margin: "20px",
   },
   mainRow: {
     display: "flex",

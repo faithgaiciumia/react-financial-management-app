@@ -4,7 +4,7 @@ export default function SnackBar({ text }) {
   const styles = useStyles();
   return (
     <div className={styles.container}>
-      <p>{text}</p>
+      <p style={{fontFamily:"Poppins", fontSize:"12px"}}>{text}</p>
     </div>
   );
 }

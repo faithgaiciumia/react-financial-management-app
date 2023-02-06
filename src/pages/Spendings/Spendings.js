@@ -27,11 +27,12 @@ export default function Spendings() {
           <div>
             <HeaderBar title="Spendings" />
           </div>
-          <div>
+          <div style={{ marginLeft: "20px", marginRight: "20px" }}>
             <FilterList array={SpendingCategories} />
           </div>
-
-          <div>{spendingsList}</div>
+          <div style={{ marginLeft: "20px", marginRight: "20px" }}>
+            {spendingsList}
+          </div>
         </div>
       </div>
     </>
@@ -43,8 +44,7 @@ const useStyles = createUseStyles({
     display: "flex",
   },
   main: {
-    width: "100%",
-    margin: "20px",
+    width: "78%",
   },
   mainRow: {
     display: "flex",

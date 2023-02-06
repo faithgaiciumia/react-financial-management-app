@@ -1,4 +1,5 @@
 import { createUseStyles } from "react-jss";
+import HeaderBar from "../../components/HeaderBar";
 import SideBar from "../../components/SideBar";
 
 export default function Predictions() {
@@ -6,8 +7,25 @@ export default function Predictions() {
   return (
     <>
       <div className={styles.row}>
-        <SideBar predictionsActive={true}/>
-        <div className={styles.main}>Hi am predictions page</div>
+        <SideBar predictionsActive={true} />
+        <div className={styles.main}>
+          <HeaderBar title="Stats" />
+          <div className={styles.masonryCont}>
+            <div className={styles.collg}>
+              <div className={styles.bordered}>
+                <h1 className={styles.heading}>Monthly Cash Flow</h1>
+              </div>
+              <div className={styles.bordered}>
+                <h1 className={styles.heading}>Spending Categories</h1>
+              </div>
+            </div>
+            <div className={styles.colsm}>
+              <div className={styles.bordered}>
+                <h1 className={styles.heading}>Alerts</h1>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
@@ -18,7 +36,7 @@ const useStyles = createUseStyles({
     display: "flex",
   },
   main: {
-    width: "100%",
+    width: "78%",
   },
   mainRow: {
     display: "flex",
@@ -29,4 +47,26 @@ const useStyles = createUseStyles({
     width: "48%",
     margin: "10px",
   },
+  masonryCont: {
+    display: "flex",
+    marginTop: "10px",
+    marginLeft: "10px",
+  },
+  colsm: {
+    width: "30%",
+    marginLeft: "10px",
+  },
+  collg: {
+    width: "75%",
+  },
+  bordered: {
+    border: "0.5px solid rgba(0, 0, 0, 0.3)",
+    borderRadius: "6px",
+    padding: "15px",
+    marginBottom: "10px",
+  },
+  heading:{
+    fontFamily:"Poppins",
+    fontSize:"18px"
+  }
 });

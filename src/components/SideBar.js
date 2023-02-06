@@ -31,7 +31,7 @@ export default function SideBar({
             to="/home"
             className={homeActive ? styles.listTxtActive : styles.listTxt}
           >
-            <p>Home</p>
+            <p style={{fontFamily:"Poppins"}}>Home</p>
           </Link>
         </div>
         <div
@@ -42,7 +42,7 @@ export default function SideBar({
             to="/spendings"
             className={spendingsActive ? styles.listTxtActive : styles.listTxt}
           >
-            <p>Spendings</p>
+            <p style={{fontFamily:"Poppins"}}>Spendings</p>
           </Link>
         </div>
         <div className={earningsActive ? styles.listRowActive : styles.listRow}>
@@ -51,7 +51,7 @@ export default function SideBar({
             to="/earnings"
             className={earningsActive ? styles.listTxtActive : styles.listTxt}
           >
-            <p>Earnings</p>
+            <p style={{fontFamily:"Poppins"}}>Earnings</p>
           </Link>
         </div>
         <div
@@ -64,7 +64,7 @@ export default function SideBar({
               predictionsActive ? styles.listTxtActive : styles.listTxt
             }
           >
-            <p>Predictions</p>
+            <p style={{fontFamily:"Poppins"}}>Stats</p>
           </Link>
         </div>
         <div className={profileActive ? styles.listRowActive : styles.listRow}>
@@ -73,7 +73,7 @@ export default function SideBar({
             to="/profile"
             className={profileActive ? styles.listTxtActive : styles.listTxt}
           >
-            <p>Profile</p>
+            <p style={{fontFamily:"Poppins"}}>Profile</p>
           </Link>
         </div>
         <div className={settingsActive ? styles.listRowActive : styles.listRow}>
@@ -82,7 +82,7 @@ export default function SideBar({
             to="/settings"
             className={settingsActive ? styles.listTxtActive : styles.listTxt}
           >
-            <p>Account & Settings</p>
+            <p style={{fontFamily:"Poppins"}}>Account & Settings</p>
           </Link>
         </div>
       </div>

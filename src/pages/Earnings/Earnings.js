@@ -25,8 +25,8 @@ export default function Earnings() {
           <div>
             <HeaderBar title="Earnings" />
           </div>
-          <div>
-            <FilterList array={EarningCategories}/>
+          <div style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <FilterList array={EarningCategories} />
           </div>
           <div>{earningsList}</div>
         </div>
@@ -40,8 +40,8 @@ const useStyles = createUseStyles({
     display: "flex",
   },
   main: {
-    width: "100%",
-    margin: "20px",
+    width: "78%",
+    boxSizing: "border-box",
   },
   mainRow: {
     display: "flex",

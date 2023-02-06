@@ -24,10 +24,10 @@ const useStyles = createUseStyles({
     justifyContent: "space-between",
     alignContent: "center",
     alignItems: "center",
-    width: "100%",
-    boxShadow: "rgba(149, 157, 165, 0.1) 0px 8px 24px",
-    padding: "10px",
-    borderRadius: "8px",
+    width: "100%",    
+    padding: "15px",    
+    backgroundColor:"#f8f9fa",
+    marginRight:"20px"
   },
   text:{
     fontFamily:"Poppins",

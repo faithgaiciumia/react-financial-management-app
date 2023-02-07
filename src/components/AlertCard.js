@@ -1,10 +1,10 @@
 import { createUseStyles } from "react-jss";
 
-export default function AlertCard() {
+export default function AlertCard({message}) {
   const styles = useStyles();
   return (
     <div className={styles.container}>
-      <p style={{fontFamily:"Poppins", fontSize:"12px"}}>You have made <b>KES 20,000</b> this week. </p>
+      <p style={{fontFamily:"Poppins", fontSize:"12px"}}> {message} </p>
     </div>
   );
 }

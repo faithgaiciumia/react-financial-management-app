@@ -93,7 +93,7 @@ export default function SideBar({
 const useStyles = createUseStyles({
   container: {
     backgroundColor: "rgba(198, 243, 202, 0.4)",
-
+    minHeight:"100vh",
     width: "20%",
   },
   header: {

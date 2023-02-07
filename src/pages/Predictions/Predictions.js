@@ -28,11 +28,11 @@ export default function Predictions() {
             <div className={styles.colsm}>
               <div className={styles.bordered}>
                 <h1 className={styles.heading}>Alerts</h1>
-                <AlertCard/>
-                <AlertCard/>
-                <AlertCard/>
-                <AlertCard/>
-                <AlertCard/>
+                <AlertCard message="You have made KES 20,000 this week."/>
+                <AlertCard message="You've spent KES 6,000 this week."/>
+                <AlertCard message="You're spending rate is relatively high."/>
+                <AlertCard message="You made an unplanned shopping spree on Monday."/>
+                <AlertCard message="Shumia Investments has been your highest payer this month."/>
               </div>
             </div>
           </div>

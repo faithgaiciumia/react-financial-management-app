@@ -1,0 +1,22 @@
+export const categoriesAmount = [
+    {
+        id:0,
+        label:"House",
+        amount:12000
+    },
+    {
+        id:1,
+        label:"Church",
+        amount:4000
+    },
+    {
+        id:2,
+        label:"Enjoyment",
+        amount:1000
+    },
+    {
+        id:3,
+        label:"Clothes",
+        amount:2000
+    },
+]

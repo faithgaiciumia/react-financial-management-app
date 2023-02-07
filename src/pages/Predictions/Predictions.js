@@ -1,6 +1,10 @@
 import { createUseStyles } from "react-jss";
 import HeaderBar from "../../components/HeaderBar";
 import SideBar from "../../components/SideBar";
+import CashflowChart from "../../components/CashflowChart";
+import { monthlyCashFlow } from "../../data/monthlyCashflow";
+import { categoriesAmount } from "../../data/categoriesAmount";
+import AlertCard from "../../components/AlertCard";
 
 export default function Predictions() {
   const styles = useStyles();
@@ -14,14 +18,21 @@ export default function Predictions() {
             <div className={styles.collg}>
               <div className={styles.bordered}>
                 <h1 className={styles.heading}>Monthly Cash Flow</h1>
+                <CashflowChart data={monthlyCashFlow} indexAxis="x" />
               </div>
               <div className={styles.bordered}>
                 <h1 className={styles.heading}>Spending Categories</h1>
+                <CashflowChart data={categoriesAmount} indexAxis="y" />
               </div>
             </div>
             <div className={styles.colsm}>
               <div className={styles.bordered}>
                 <h1 className={styles.heading}>Alerts</h1>
+                <AlertCard/>
+                <AlertCard/>
+                <AlertCard/>
+                <AlertCard/>
+                <AlertCard/>
               </div>
             </div>
           </div>
@@ -65,8 +76,8 @@ const useStyles = createUseStyles({
     padding: "15px",
     marginBottom: "10px",
   },
-  heading:{
-    fontFamily:"Poppins",
-    fontSize:"18px"
-  }
+  heading: {
+    fontFamily: "Poppins",
+    fontSize: "18px",
+  },
 });

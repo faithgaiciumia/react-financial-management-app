@@ -1,5 +1,6 @@
 import { createUseStyles } from "react-jss";
 import HeaderBar from "../../components/HeaderBar";
+import ProfileCircle from "../../components/ProfileCircle";
 import SideBar from "../../components/SideBar";
 
 export default function Profile() {
@@ -15,10 +16,61 @@ export default function Profile() {
             style={{ marginLeft: "20px", marginTop: "20px" }}
           >
             <div className={styles.bordered}>
-              <h1>Profile</h1>
+              <div>
+                <h1 style={{ fontFamily: "Poppins", fontSize: "16px" }}>
+                  Profile
+                </h1>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignContent: "center",
+                  alignItems: "center",
+                  marginTop: "10px",
+                }}
+              >
+                <div>
+                  <ProfileCircle />
+                  <h1
+                    style={{
+                      marginTop: "10px",
+                      fontFamily: "Poppins",
+                      fontSize: "12px",
+                      color: "#12B886",
+                      textAlign:"center"
+                    }}
+                  >
+                    Update Photo
+                  </h1>
+                </div>
+                <div style={{ width: "100%", marginLeft: "10px" }}>
+                  <p style={{
+                    fontFamily:"Poppins",
+                    fontSize:"12px"
+                  }}>Faith Kamencu</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignContent: "center",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      borderBottom:"0.5px solid rgba(0, 0, 0, 0.3)",
+                      paddingBottom:"5px"
+                    }}
+                  >
+                    <p style={{fontFamily:"Poppins", fontSize:"12px", color:"rgba(0,0,0, 0.5)"}}>Joined in 2023</p>
+                    <h1 style={{fontFamily:"Poppins", fontSize:"12px", color:"#12B886"}}>Change name</h1>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className={styles.bordered}>
-              <h1>Account Details</h1>
+              <div>
+                <h1 style={{ fontFamily: "Poppins", fontSize: "16px" }}>
+                  Account Details
+                </h1>
+              </div>
+              <div></div>
             </div>
             <div className={styles.bordered}>3</div>
             <div className={styles.bordered}>4</div>
@@ -39,8 +91,8 @@ const useStyles = createUseStyles({
   },
   mainRow: {
     display: "flex",
-    flexWrap:"wrap",
-    justifyContent:"center"
+    flexWrap: "wrap",
+    justifyContent: "center",
   },
   card: {
     borderRadius: "8px",
@@ -51,8 +103,7 @@ const useStyles = createUseStyles({
   bordered: {
     border: "0.5px solid rgba(0,0,0, 0.3)",
     padding: "10px",
-    width:"40%",
-    margin:"10px"
-
+    width: "40%",
+    margin: "10px",
   },
 });

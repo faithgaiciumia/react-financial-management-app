@@ -6,6 +6,7 @@ import PaidIcon from "@mui/icons-material/Paid";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import SettingsIcon from "@mui/icons-material/Settings";
 import { Link } from "react-router-dom";
+import ProfileCircle from "./ProfileCircle";
 export default function SideBar({
   homeActive,
   profileActive,
@@ -19,9 +20,7 @@ export default function SideBar({
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <div className={styles.profile}>
-          <p className={styles.profileTxt}>F</p>
-        </div>
+        <ProfileCircle />
         <p className={styles.bold}>Faith Gaiciumia</p>
       </div>
       <div className={styles.list}>
@@ -93,7 +92,7 @@ export default function SideBar({
 const useStyles = createUseStyles({
   container: {
     backgroundColor: "rgba(198, 243, 202, 0.4)",
-    minHeight:"100vh",
+    minHeight: "100vh",
     width: "20%",
   },
   header: {
